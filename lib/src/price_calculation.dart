@@ -8,12 +8,33 @@ class PriceCalculation {
   double? _taxValue = 0.0;
   double? _discountValue = 0.0;
 
-  PriceCalculation({
+  static final PriceCalculation _instance = PriceCalculation._internal(
+    startValue: 0,
+    gain: null,
+    discount: null,
+    tax: null,
+  );
+
+  PriceCalculation._internal({
     required this.startValue,
     this.gain,
     this.discount,
     this.tax,
   });
+
+  factory PriceCalculation({
+    required double startValue,
+    double? gain,
+    double? discount,
+    double? tax,
+  }) {
+    _instance.startValue = startValue;
+    _instance.gain = gain;
+    _instance.discount = discount;
+    _instance.tax = tax;
+
+    return _instance;
+  }
 
   void calculate() {
     if (gain != null) {
@@ -32,13 +53,15 @@ class PriceCalculation {
       //if we have entered discount without tax
       _discountValue = (startValue * discount!) / 100;
       _result = startValue - _discountValue!;
-    } else {
+    } else if (discount != null && tax != null) {
       //if we have entered discount and tax
       // Discount first, then tax
       _discountValue = (startValue * discount!) / 100;
       final discountedPrice = startValue - _discountValue!;
       _taxValue = (discountedPrice * tax!) / 100;
       _result = discountedPrice + _taxValue!;
+    } else {
+      _result = startValue;
     }
   }
 
@@ -50,7 +73,7 @@ class PriceCalculation {
   @override
   String toString() {
     if (gain != null && gain! > 0) {
-      return "New form price from base price $startValue calculate with gains procent of $gain%. Result value is:  $_result";
+      return "New form price from base price $startValue calculate with gains procent of $gain% and we get gain value: $_gainValue. Result value is:  $_result";
     } else {
       return "New form price from base price $startValue result value is: $_result\n>Discount value is: $_discountValue\n>Tax value is: $_taxValue";
     }
