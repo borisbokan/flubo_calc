@@ -1,8 +1,20 @@
-import 'package:flubo_package/src/price_calculation.dart';
+import 'package:flubo_package/flubo_package.dart';
 
 void main() {
-  var res1 = PriceCalculation(startValue: 1200, gain: 25, discount: 20);
-  res1.calculate();
+  //List<double> pricesList = [1890.0, 560.0, 780.0, 256.0, 1450.0];
 
-  print(res1.toString());
+  // pricesList.forEach((item) {
+  //   final calItem = PriceCalculation(startValue: item, gain: 20);
+  //   calItem.calculate();
+
+  //   print(calItem.toString());
+  // });
+
+  var perFromVal = PercentCalulations(
+    mainValue: 1450,
+    amount: 545,
+    percent: 54,
+  );
+  perFromVal.calculate();
+  print(perFromVal.toString());
 }

@@ -1,8 +1,7 @@
-/// Support for doing something awesome.
+/// Package for do sell calclulation
 ///
-/// More dartdocs go here.
+/// @author - Boris Bokan
 library;
 
 export 'src/price_calculation.dart';
-
-// TODO: Export any libraries intended for clients of this package.
+export 'src/percent_calculations.dart';

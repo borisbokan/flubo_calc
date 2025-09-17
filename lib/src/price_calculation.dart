@@ -1,3 +1,5 @@
+class CalculationFisrt {}
+
 class PriceCalculation {
   double startValue;
   double? gain;
@@ -37,6 +39,7 @@ class PriceCalculation {
   }
 
   void calculate() {
+    //When we choice to calculate gain of some price value, other argument parameters have to be set to null
     if (gain != null) {
       if (discount != null || tax != null) {
         throw Exception(

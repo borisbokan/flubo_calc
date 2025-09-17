@@ -1,7 +1,7 @@
 name: flubo_package
-description: A starting point for Dart libraries or applications.
+description: Plenty of calculations for e-commerce or a local shop
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+repository: https://github.com/borisbokan/flubo_package
 
 environment:
   sdk: ^3.9.2
