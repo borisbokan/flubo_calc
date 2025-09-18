@@ -8,11 +8,7 @@ class PercentCalulations {
     mainValue: 0,
   );
 
-  PercentCalulations._internal({
-    double? mainValue,
-    double? amount,
-    double? percent,
-  });
+  PercentCalulations._internal({double? mainValue});
 
   factory PercentCalulations({
     required double mainValue,
