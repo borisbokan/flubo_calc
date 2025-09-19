@@ -1,3 +1,5 @@
+/// Aauthor: Boris Bokan
+/// Date: 18.09.2025.
 class PriceCalculation {
   double startValue;
   double? gain;
@@ -74,7 +76,7 @@ class PriceCalculation {
   @override
   String toString() {
     if (gain != null && gain! > 0) {
-      return "New form price from base price $startValue calculate with gains procent of $gain% and we get gain value: $_gainValue. Result value is:  $_result";
+      return "New form price from base price $startValue calculate with gains procent of $gain% and we get gain value: $_gainValue. Your sell price now is:  $_result";
     } else {
       return "New form price from base price $startValue result value is: $_result\n>Discount value is: $_discountValue ($discount%)\n>Tax value is: $_taxValue ($tax%)";
     }

@@ -1,6 +1,7 @@
-/// Package for do sell calclulation
+/// Package with some of maine colections of calclulations
 ///
-/// @author - Boris Bokan
+/// Aauthor: Boris Bokan
+/// Date: 18.09.2025.
 library;
 
 export 'src/price_calculation.dart';

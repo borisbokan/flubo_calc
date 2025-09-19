@@ -1,3 +1,5 @@
+/// Aauthor: Boris Bokan
+/// Date: 18.09.2025.
 class PercentCalulations {
   double? _mainValue;
   double? _amount;

@@ -9,8 +9,7 @@ void main() async {
     //When we choice to calculate gain of some price value, other argument parameters have to be set to null or you will get exeption
     //You can calculate two types of price , this is the first, belov,  with gain calculation.
     final gain = PriceCalculation(startValue: item, gain: 20);
-    //gain.calculate();
-    print(gain.toString());
+    print("--| Result with gain:\n" + gain.toString() + "\n");
 
     //Second type where we calculate seling price or end price (for seling).
     final sellPirce = PriceCalculation(
@@ -19,30 +18,46 @@ void main() async {
       tax: 20,
       gain: null,
     );
-    //sellPirce.calculate();
-    print(sellPirce.toString() + "\n");
+    print("--| Seling price example:\n" + sellPirce.toString() + "\n");
   });
+  print("--------------------------------------------------------------\n");
+
   print(" ----- Examples  percent calcultions  -------");
 
   /// Simple example of using percent values. Two types of calculation:
   /// 1. When we need percent of some value
-  /// 2. When wen need how much procent is from some amount
-  var perFromVal = PercentCalulations(
+  var valFromPercent = PercentCalulations(
     mainValue: 1450,
     amount: null,
     percent: 24,
   );
-  // perFromVal.calculate();
-  print(perFromVal.toString() + "\n");
+  print(valFromPercent.toString() + "\n");
+
+  /// 2. When wen need how much procent for some amount
+  var whatPercent = PercentCalulations(
+    mainValue: 2450.00,
+    amount: 130.00,
+    percent: null,
+  );
+  print(whatPercent.toString() + "\n");
+  print("--------------------------------------------------------------\n");
 
   print(" ----- Examples time travel calcultions  -------");
 
   ///Example 1 - Simple example of using calculations
   var time = TimeTravel(destinationKm: 11860, speed: 450);
-  //time.calculate();
-  print(time.toString());
+  print("1. Simple usage of calc of travel time");
+  print(
+    "Result for destination of 11.860 km with speed of 450 km/h a time arriving is:" +
+        time.toString() +
+        "\n",
+  );
 
   ///Exmple 2 of using Time Travel calculation
+  // false Db data list with speeds and distances records
+  print(
+    "2. Example of calc of travel time with relative speed, speed was changing in some time intreval.\n",
+  );
   List<double> speeds = [85, 90, 105, 120, 80, 60]; //km/h
   List<double> distances = [15, 23, 10, 13, 17, 7]; //km
 
@@ -58,6 +73,8 @@ void main() async {
         .round(); //it is simulation some time of duration , it isn't relevant
 
     print("You are driving now with speed of ${speeds[i]} km/h");
+
+    await Future.delayed(Duration(milliseconds: durationMs));
     if (h != 0) {
       print(
         ">you reach ${distances[i]} km distance for ${timeTra.hour}h and ${timeTra.min} min\n",
@@ -65,7 +82,6 @@ void main() async {
     } else {
       print(">you reach ${distances[i]} km distance for ${timeTra.min} min\n");
     }
-    await Future.delayed(Duration(milliseconds: durationMs));
   }
 
   print("You arrived!");
