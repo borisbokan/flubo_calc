@@ -4,12 +4,12 @@ import 'package:flubo_package/src/time_travel.dart';
 void main() async {
   ///Simple example of using calculations for seling price or gain from some price when we make or form seeling price with our gain.
   List<double> pricesList = [1890.0, 560.0, 780.0, 256.0, 1450.0];
-
+  print(" ----- Examples  price calcultions  -------");
   pricesList.forEach((item) {
     //When we choice to calculate gain of some price value, other argument parameters have to be set to null or you will get exeption
     //You can calculate two types of price , this is the first, belov,  with gain calculation.
     final gain = PriceCalculation(startValue: item, gain: 20);
-    gain.calculate();
+    //gain.calculate();
     print(gain.toString());
 
     //Second type where we calculate seling price or end price (for seling).
@@ -19,9 +19,10 @@ void main() async {
       tax: 20,
       gain: null,
     );
-    sellPirce.calculate();
-    print(sellPirce.toString());
+    //sellPirce.calculate();
+    print(sellPirce.toString() + "\n");
   });
+  print(" ----- Examples  percent calcultions  -------");
 
   /// Simple example of using percent values. Two types of calculation:
   /// 1. When we need percent of some value
@@ -31,12 +32,14 @@ void main() async {
     amount: null,
     percent: 24,
   );
-  perFromVal.calculate();
-  print(perFromVal.toString());
+  // perFromVal.calculate();
+  print(perFromVal.toString() + "\n");
+
+  print(" ----- Examples time travel calcultions  -------");
 
   ///Example 1 - Simple example of using calculations
   var time = TimeTravel(destinationKm: 11860, speed: 450);
-  time.calculate();
+  //time.calculate();
   print(time.toString());
 
   ///Exmple 2 of using Time Travel calculation

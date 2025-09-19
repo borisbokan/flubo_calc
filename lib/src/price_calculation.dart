@@ -1,5 +1,3 @@
-class CalculationFisrt {}
-
 class PriceCalculation {
   double startValue;
   double? gain;
@@ -34,7 +32,7 @@ class PriceCalculation {
     _instance.gain = gain;
     _instance.discount = discount;
     _instance.tax = tax;
-
+    _instance.calculate();
     return _instance;
   }
 
@@ -78,7 +76,7 @@ class PriceCalculation {
     if (gain != null && gain! > 0) {
       return "New form price from base price $startValue calculate with gains procent of $gain% and we get gain value: $_gainValue. Result value is:  $_result";
     } else {
-      return "New form price from base price $startValue result value is: $_result\n>Discount value is: $_discountValue\n>Tax value is: $_taxValue";
+      return "New form price from base price $startValue result value is: $_result\n>Discount value is: $_discountValue ($discount%)\n>Tax value is: $_taxValue ($tax)";
     }
   }
 }

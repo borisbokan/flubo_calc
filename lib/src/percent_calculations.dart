@@ -24,6 +24,7 @@ class PercentCalulations {
     if (percent != null) {
       _instance._typeOfCalk = "percent";
     }
+    _instance.calculate();
     return _instance;
   }
 

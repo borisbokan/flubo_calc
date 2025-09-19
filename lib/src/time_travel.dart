@@ -15,11 +15,11 @@ class TimeTravel {
   factory TimeTravel({required double destinationKm, required double speed}) {
     _instance.destinationKm = destinationKm;
     _instance.speed = speed;
+    _instance.calculate();
     return _instance;
   }
 
   void calculate() {
-    // T = D / Sp
     _rawTravelTime = destinationKm / speed;
     _setClockTime(_rawTravelTime!);
   }
