@@ -1,28 +1,29 @@
 /// Aauthor: Boris Bokan
 /// Date: 18.09.2025.
+/// Design type is singlton
 class TimeTravel {
-  double destinationKm;
+  double destination;
   double speed;
   double? _rawTravelTime;
   String? hour;
   String? min;
 
   static final TimeTravel _instance = TimeTravel._internal(
-    destinationKm: 0,
+    destination: 0,
     speed: 0,
   );
 
-  TimeTravel._internal({required this.destinationKm, required this.speed});
+  TimeTravel._internal({required this.destination, required this.speed});
 
-  factory TimeTravel({required double destinationKm, required double speed}) {
-    _instance.destinationKm = destinationKm;
+  factory TimeTravel({required double destination, required double speed}) {
+    _instance.destination = destination;
     _instance.speed = speed;
     _instance.calculate();
     return _instance;
   }
 
   void calculate() {
-    _rawTravelTime = destinationKm / speed;
+    _rawTravelTime = destination / speed;
     _setClockTime(_rawTravelTime!);
   }
 

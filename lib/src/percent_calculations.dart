@@ -1,5 +1,10 @@
+/// Handle amount value in percents anf vice versa.
+///
+///
+///
 /// Aauthor: Boris Bokan
 /// Date: 18.09.2025.
+/// Design type is singlton
 class PercentCalulations {
   double? _mainValue;
   double? _amount;

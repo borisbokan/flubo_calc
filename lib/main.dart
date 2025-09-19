@@ -1,4 +1,4 @@
-import 'package:flubo_package/flubo_package.dart';
+import 'package:flubo_package/flubo_calc.dart';
 import 'package:flubo_package/src/time_travel.dart';
 
 void main() async {
@@ -45,7 +45,7 @@ void main() async {
   print(" ----- Examples time travel calcultions  -------");
 
   ///Example 1 - Simple example of using calculations
-  var time = TimeTravel(destinationKm: 11860, speed: 450);
+  var time = TimeTravel(destination: 11860, speed: 450);
   print("1. Simple usage of calc of travel time");
   print(
     "Result for destination of 11.860 km with speed of 450 km/h a time arriving is:" +
@@ -63,7 +63,7 @@ void main() async {
 
   for (var i = 0; i < speeds.length; i++) {
     final timeTra = TimeTravel(
-      destinationKm: distances[i],
+      destination: distances[i],
       speed: speeds[i].roundToDouble(),
     );
     timeTra.calculate();
