@@ -21,6 +21,9 @@ emailto: borisbokan@gmail.com
 
 Basic and diverse computations which I use in my projects, nothing speacial.
 
+- Gain calculation
+- Sell price calculation
+
 ## Getting started
 
 You have to have the latest version of Dart installed.
