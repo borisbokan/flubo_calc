@@ -31,7 +31,8 @@ You have to have the latest version of Dart installed.
 
 -Simple example of using calculations for seling price or gain from some price when we make or form seeling price with our gain.
 
-````dart dart DartList<double> pricesList = [1890.0, 560.0, 780.0, 256.0, 1450.0];
+````dart
+DartList<double> pricesList = [1890.0, 560.0, 780.0, 256.0, 1450.0];
 
 pricesList.forEach((item) {
     //When we choice to calculate gain of some price value, other argument parameters have to be set to null or you will get exeption.
