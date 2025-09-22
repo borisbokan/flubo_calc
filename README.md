@@ -31,11 +31,11 @@ You have to have the latest version of Dart installed.
 
 Simple example of using calculations for seling price or gain from some price when we make or form seeling price with our gain.
 
-List<double> pricesList = [1890.0, 560.0, 780.0, 256.0, 1450.0];
+```List<double> pricesList = [1890.0, 560.0, 780.0, 256.0, 1450.0];
 
 pricesList.forEach((item) {
-//When we choice to calculate gain of some price value, other argument parameters have to be set to null or you will get exeption.
-//You can calculate two types of price , this is the first, belov, with gain calculation.
+When we choice to calculate gain of some price value, other argument parameters have to be set to null or you will get exeption.
+You can calculate two types of price , this is the first, belov, with gain calculation.
 
 final gain = PriceCalculation(startValue: item, gain: 20);
 print("--| Result with gain:\n" + gain.toString() + "\n");
@@ -117,3 +117,4 @@ print("You arrived!");
 ## Additional information
 
 No additional information for now.
+```
