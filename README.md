@@ -85,7 +85,8 @@ pricesList.forEach((item) {
     );
 
 //Example 2 - Using Time Travel calculation
-
+    //Simulation of driving with changing speed of moving, during driving a car,
+    //and calculation of the rest time of traveling.
     List<double> speeds = [85, 90, 105, 120, 80, 60]; //km/h
     List<double> distances = [15, 23, 10, 13, 17, 7]; //km
 
