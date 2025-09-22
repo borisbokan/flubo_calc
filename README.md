@@ -13,6 +13,8 @@ and the Flutter guide for
 
 Basic computation from some of mine projects. For now nothing special, this is my first package I made, and if someone thinks it useful, let it use. I keep working on this from time to time.
 
+p.s. This is a result of learning how to make my own packages.
+
 author: FLubo
 http: https://sites.google.com/view/borisbokan-en/home
 emailto: borisbokan@gmail.com
