@@ -1,5 +1,5 @@
-import 'package:flubo_package/flubo_calc.dart';
-import 'package:flubo_package/src/time_travel.dart';
+import 'lib/flubo_calc.dart';
+import 'lib/src/time_travel.dart';
 
 void main() async {
   ///Simple example of using calculations for seling price or gain from some price when we make or form seeling price with our gain.

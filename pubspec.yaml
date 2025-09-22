@@ -1,7 +1,8 @@
 name: flubo_package
-description: Plenty of calculations for e-commerce or a local shop
+description: Basic computation from some of mine projects. For now nothing special, this is my first package I made, and if someone thinks it useful, let it use. p.s. This is a result of learning how to make my own packages. 
+
 version: 1.0.0
-repository: https://github.com/borisbokan/flubo_package
+repository: https://github.com/borisbokan/flubo_calc
 
 environment:
   sdk: ^3.9.2
