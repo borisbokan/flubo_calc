@@ -15,9 +15,7 @@ Basic computation from some of mine projects. For now nothing special, this is m
 
 author: FLubo
 http: https://sites.google.com/view/borisbokan-en/home
-mailto: borisbokan@gmail.com?subject=Mail from flubo_calc package&body=Type message to the author of package...
-tel: +381692270037
-sms: +381692270037
+emailto: borisbokan@gmail.com
 
 ## Features
 
