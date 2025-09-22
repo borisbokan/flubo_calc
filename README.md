@@ -15,9 +15,9 @@ Basic computation from some of mine projects. For now nothing special, this is m
 
 p.s. This is a result of learning how to make my own packages.
 
-author: FLubo
-http: https://sites.google.com/view/borisbokan-en/home
-emailto: borisbokan@gmail.com
+- author: FLubo
+- http: https://sites.google.com/view/borisbokan-en/home
+- emailto: borisbokan@gmail.com
 
 ## Features
 
