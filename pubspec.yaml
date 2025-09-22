@@ -1,7 +1,7 @@
-name: flubo_package
-description: Basic computation from some of mine projects. For now nothing special, this is my first package I made, and if someone thinks it useful, let it use. p.s. This is a result of learning how to make my own packages. 
+name: flubo_calc
+description: Basic computation from some of my projects. For now nothing special, this is my first package I made, and if someone thinks it useful, let it use. p.s. This is a result of learning how to make my own packages. 
 
-version: 1.0.0
+version: 1.0.2
 repository: https://github.com/borisbokan/flubo_calc
 
 environment:
