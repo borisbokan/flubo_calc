@@ -15,10 +15,6 @@ Basic computation from some of mine projects. For now nothing special, this is m
 
 p.s. This is a result of learning how to make my own packages.
 
-- author: FLubo
-- http: https://sites.google.com/view/borisbokan-en/home
-- emailto: borisbokan@gmail.com
-
 ## Features
 
 Basic and diverse computations which I use in my projects, nothing speacial.
@@ -119,4 +115,8 @@ pricesList.forEach((item) {
 
 ## Additional information
 
-No additional information for now. It is to simple to write more info (for now).
+No additional special information for now. It is to simple to write more info (for now).
+
+- author: Flubo
+- http: https://sites.google.com/view/borisbokan-en/home
+- emailto: borisbokan@gmail.com
