@@ -31,11 +31,11 @@ You have to have the latest version of Dart installed.
 
 Simple example of using calculations for seling price or gain from some price when we make or form seeling price with our gain.
 
-```List<double> pricesList = [1890.0, 560.0, 780.0, 256.0, 1450.0];
+````List<double> pricesList = [1890.0, 560.0, 780.0, 256.0, 1450.0];
 
 pricesList.forEach((item) {
-When we choice to calculate gain of some price value, other argument parameters have to be set to null or you will get exeption.
-You can calculate two types of price , this is the first, belov, with gain calculation.
+//When we choice to calculate gain of some price value, other argument parameters have to be set to null or you will get exeption.
+//You can calculate two types of price , this is the first, belov, with gain calculation.
 
 final gain = PriceCalculation(startValue: item, gain: 20);
 print("--| Result with gain:\n" + gain.toString() + "\n");
@@ -54,36 +54,36 @@ print("--| Result with gain:\n" + gain.toString() + "\n");
 Simple example of using percent values. Two types of calculation:
 
 1. When we need percent of some value
-   var valFromPercent = PercentCalulations(
+   ```var valFromPercent = PercentCalulations(
    mainValue: 1450,
    amount: null,
    percent: 24,
    );
-   print(valFromPercent.toString() + "\n");
+   print(valFromPercent.toString() + "\n");```
 
 2. When wen need how much procent for some amount
-   var whatPercent = PercentCalulations(
+  ``` var whatPercent = PercentCalulations(
    mainValue: 2450.00,
    amount: 130.00,
    percent: null,
    );
    print(whatPercent.toString() + "\n");
-   print("--------------------------------------------------------------\n");
+   print("--------------------------------------------------------------\n");```
 
 Example 1 - Simple example of using calculations
-var time = TimeTravel(destination: 11860, speed: 450);
+```var time = TimeTravel(destination: 11860, speed: 450);
 print("1. Simple usage of calc of travel time");
 print(
 "Result for destination of 11.860 km with speed of 450 km/h a time arriving is:" +
 time.toString() +
 "\n",
-);
+);```
 
 Exmple 2 of using Time Travel calculation
-// false Db data list with speeds and distances records
 print(
 "2. Example of calc of travel time with relative speed, speed was changing in some time intreval.\n",
 );
+```// false Db data list with speeds and distances records
 List<double> speeds = [85, 90, 105, 120, 80, 60]; //km/h
 List<double> distances = [15, 23, 10, 13, 17, 7]; //km
 
@@ -109,12 +109,12 @@ final durationMs = ((h + m) \* 1000)
       print(">you reach ${distances[i]} km distance for ${timeTra.min} min\n");
     }
 
-}
+}```
 
 And on the end
-print("You arrived!");
+```print("You arrived!");```
 
 ## Additional information
 
 No additional information for now.
-```
+````
