@@ -13,6 +13,12 @@ and the Flutter guide for
 
 Basic computation from some of mine projects. For now nothing special, this is my first package I made, and if someone thinks it useful, let it use. I keep working on this from time to time.
 
+author: FLubo
+http: https://sites.google.com/view/borisbokan-en/home
+mailto: borisbokan@gmail.com?subject=Mail from flubo_calc package&body=Type message to the author of package...
+tel: +381692270037
+sms: +381692270037
+
 ## Features
 
 Basic and diverse computations which I use in my projects, nothing speacial.
@@ -24,7 +30,6 @@ You have to have last version of Dart instalation.
 ## Usage
 
 ````
-void main() async {
 ///Simple example of using calculations for seling price or gain from some price when we make or form seeling price with our gain.
 List<double> pricesList = [1890.0, 560.0, 780.0, 256.0, 1450.0];
 print(" ----- Examples price calcultions -------");
@@ -47,6 +52,7 @@ print("--| Result with gain:\n" + gain.toString() + "\n");
 });
 print("--------------------------------------------------------------\n");```
 
+```
 print(" ----- Examples percent calcultions -------");
 
 /// Simple example of using percent values. Two types of calculation:
@@ -65,10 +71,10 @@ amount: 130.00,
 percent: null,
 );
 print(whatPercent.toString() + "\n");
-print("--------------------------------------------------------------\n");
+print("--------------------------------------------------------------\n");```
 
-print(" ----- Examples time travel calcultions -------");
 
+```
 ///Example 1 - Simple example of using calculations
 var time = TimeTravel(destination: 11860, speed: 450);
 print("1. Simple usage of calc of travel time");
@@ -110,12 +116,9 @@ final durationMs = ((h + m) \* 1000)
 
 }
 
-print("You arrived!");
-
-}
+print("You arrived!");```
 
 ## Additional information
 
 No additional information for now.
-
 ````
