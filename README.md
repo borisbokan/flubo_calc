@@ -84,11 +84,8 @@ pricesList.forEach((item) {
     "\n",
     );
 
-//Exmple 2 of using Time Travel calculation
-    print("2. Example of calc of travel time with relative speed,
-      speed was changing in some time intreval.\n",
-    );
-    // false Db data list with speeds and distances records
+//Example 2 - Using Time Travel calculation
+
     List<double> speeds = [85, 90, 105, 120, 80, 60]; //km/h
     List<double> distances = [15, 23, 10, 13, 17, 7]; //km
 
@@ -119,4 +116,4 @@ pricesList.forEach((item) {
 
 ## Additional information
 
-No additional information for now.
+No additional information for now. It is to simple to write more info (for now).
