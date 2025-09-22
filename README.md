@@ -23,6 +23,8 @@ Basic and diverse computations which I use in my projects, nothing speacial.
 
 - Gain calculation
 - Sell price calculation
+- Percent calculations (from procent , to percent)
+- Basic travel calculation
 
 ## Getting started
 
